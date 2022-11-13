@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_marginTop="-30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:scrollbarFadeDuration="@integer/material_motion_duration_medium_1">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradiat_rectangle">
+
+        <LinearLayout
+            android:id="@+id/screenclick"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradiat_rectangle"
+            android:orientation="vertical"
+            android:src="@drawable/logo">
+
+
+            <ImageView
+                android:id="@+id/logo_list"
+                android:stateListAnimator="@layout/activity_login"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:layout_marginTop="40dp"
+                android:contentDescription="Image icon"
+                android:src="@drawable/logo"
+                android:scrollbarFadeDuration="3000"/>
+
+            <Button
+                android:id="@+id/btnStartAnotherActivity"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-200dp"
+                android:background="@android:color/white"
+                android:text=" Care Your Cattle"
+                android:textColor="#FFF" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
